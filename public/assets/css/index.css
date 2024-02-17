@@ -1,0 +1,22 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#loading {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 50%;
+
+  border: 10px solid paleturquoise;
+  border-radius: 50%;
+  border-top-color: purple;
+
+  animation: aksh 2s linear infinite;
+}
+
+@keyframes aksh {
+  100% {
+    transform: rotate(360deg);
+  }
+}
