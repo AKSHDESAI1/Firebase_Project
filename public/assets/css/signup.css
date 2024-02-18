@@ -1,0 +1,53 @@
+#error {
+  height: 55px;
+  margin-bottom: 2px;
+  display: none;
+}
+
+.alert {
+  border-radius: 10px;
+}
+* {
+  font-family: Arial;
+}
+
+#container {
+  background: grey;
+  border-radius: 10px;
+  width: max-content;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+#wrapper {
+  width: max-content;
+  /* background: green; */
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+
+  transform: perspective(1000px) rotateY(-180deg);
+
+  animation: card 2s forwards;
+}
+
+@keyframes card {
+  to {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+
+#slider {
+  border: 5px solid cyan;
+  margin-top: 5px;
+  width: 0%;
+  animation: slider 6s 1.5s;
+}
+
+@keyframes slider {
+  to {
+    width: 95%;
+  }
+}
